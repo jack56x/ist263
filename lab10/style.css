@@ -1,0 +1,34 @@
+nav {
+    background-color: rgb(151, 24, 151);
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a{color: #e6ef94;}
+nav a:hover {background-color: #f04141;}
+p{
+    color: hotpink;
+}
+head {
+    color: #27963c;
+}
+.row1, .row2 {
+    display: flex;
+    padding: 35px;
+    background-color: grey;
+    border-radius: 1em;
+}
+.collum3, .collum4 {
+    display: flex;
+}
+.collum1 {
+    flex: 1;
+}
+.collum2 {
+    flex: 2;
+}
+.row1 {
+    margin: 20px;
+}
+.collum4 {
+    margin-left: 20px;
+}
