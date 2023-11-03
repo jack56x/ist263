@@ -17,9 +17,7 @@ head {
     background-color: grey;
     border-radius: 1em;
 }
-.collum3, .collum4 {
-    display: flex;
-}
+
 .collum1 {
     flex: 1;
 }
@@ -29,6 +27,15 @@ head {
 .row1 {
     margin: 20px;
 }
+.row2 {flex-wrap: wrap;}
 .collum4 {
     margin-left: 20px;
+}
+.collum3 {
+    margin-right: 70px;
+}
+@media only screen and (max-width: 600px) {
+    nav a {display: 100%;}
+    nav a {display: block;}
+    span {display: none;}
 }
