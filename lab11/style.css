@@ -1,12 +1,12 @@
 nav {
-    background-color: rgb(151, 24, 151);
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     margin-bottom: 30px;
 }
-nav a{color: #e6ef94;}
-nav a:hover {background-color: #f04141;}
+nav a{color: #ffffff;}
+nav a:hover {background-color: #aea1a1;}
 p{
-    color: hotpink;
+    color: rgb(255, 211, 150);
 }
 head {
     color: #27963c;
@@ -38,4 +38,13 @@ head {
     nav a {display: 100%;}
     nav a {display: block;}
     span {display: none;}
+}
+.skip {
+    background-color: aquamarine;
+    padding: 5px;
+    border: 1px solid black; 
+    text-decoration: none;
+    position: absolute;
+    left: -999px;
+    top: 30px;
 }
