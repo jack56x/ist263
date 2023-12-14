@@ -16,7 +16,8 @@
 
         header {
             text-align: center;
-            margin: 20px 10px; /* Adjusted margin for smaller screens */
+            max-width: 800px;
+            margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
@@ -35,7 +36,7 @@
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 10px; /* Adjusted margin for smaller screens */
+            margin: 0 20px;
             font-weight: bold;
             transition: color 0.3s ease;
         }
@@ -43,7 +44,7 @@
         nav a:hover {
             color: #007BFF;
         }
-
+        
         .welcome-section {
             text-align: center;
             padding: 20px;
@@ -52,11 +53,38 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        h1 {
+            color: #000000;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
         .images img {
             max-width: 100%;
-            height: auto;
+            height: 200px; /* Set a fixed height for the images */
             border-radius: 8px;
-            margin: 0 5px; /* Adjusted margin for smaller screens */
+            margin: 0 10px;
+            align-self: center; /* Align images to the center */
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
         }
 
         blockquote {
@@ -65,20 +93,6 @@
             background-color: #ffffff;
             color: #000000;
             border-radius: 8px;
-        }
-
-        @media only screen and (max-width: 600px) {
-            header {
-                margin: 20px; /* Adjusted margin for very small screens */
-            }
-
-            nav a {
-                margin: 0 5px; /* Adjusted margin for very small screens */
-            }
-
-            .images img {
-                margin: 0 2px; /* Adjusted margin for very small screens */
-            }
         }
     </style>
 </head>
@@ -93,9 +107,11 @@
         <section class="welcome-section">
             <h1>Welcome</h1>
 
-            <div class="images">
-                <img class="img" src="../images/lifting1.jpg" alt="Powerlifting Image">
-                <img class="img" src="../images/lifting6.jpg" alt="Lifting Weights Image">
+            <div class="image-container">
+                <div class="images">
+                    <img class="img" src="../images/lift2.jpg" alt="Powerlifting Image">
+                    <img class="img" src="../images/lifting6.jpg" alt="Lifting Weights Image">
+                </div>
             </div>
 
             <p>
