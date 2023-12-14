@@ -10,14 +10,13 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            background: linear-gradient(to bottom, #90a5ad, #000000);
+            color: #000000;
         }
 
         header {
             text-align: center;
-            max-width: 800px;
-            margin: 20px auto;
+            margin: 20px 10px; /* Adjusted margin for smaller screens */
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
@@ -26,7 +25,7 @@
 
         nav {
             text-align: center;
-            background-color: #333;
+            background-color: #000000;
             color: #fff;
             padding: 10px;
             border-radius: 8px;
@@ -36,7 +35,7 @@
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 20px;
+            margin: 0 10px; /* Adjusted margin for smaller screens */
             font-weight: bold;
             transition: color 0.3s ease;
         }
@@ -46,51 +45,40 @@
         }
 
         .welcome-section {
-            text-align: left;
+            text-align: center;
             padding: 20px;
             border-radius: 8px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
-            color: #007BFF;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-
         .images img {
             max-width: 100%;
+            height: auto;
             border-radius: 8px;
-            margin: 0 10px;
-        }
-
-        p {
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-
-        a {
-            color: #007BFF;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: #0056b3;
+            margin: 0 5px; /* Adjusted margin for smaller screens */
         }
 
         blockquote {
             margin: 20px 0;
             padding: 10px;
-            background-color: #007BFF;
-            color: #fff;
+            background-color: #ffffff;
+            color: #000000;
             border-radius: 8px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            header {
+                margin: 20px; /* Adjusted margin for very small screens */
+            }
+
+            nav a {
+                margin: 0 5px; /* Adjusted margin for very small screens */
+            }
+
+            .images img {
+                margin: 0 2px; /* Adjusted margin for very small screens */
+            }
         }
     </style>
 </head>
@@ -103,13 +91,11 @@
         </nav>
 
         <section class="welcome-section">
-            <h1>Welcome!!</h1>
+            <h1>Welcome</h1>
 
-            <div class="image-container">
-                <div class="images">
-                    <img class="img" src="../images/lifting1.jpg" alt="Powerlifting Image">
-                    <img class="img" src="../images/lifting2.jpg" alt="Lifting Weights Image">
-                </div>
+            <div class="images">
+                <img class="img" src="../images/lifting1.jpg" alt="Powerlifting Image">
+                <img class="img" src="../images/lifting6.jpg" alt="Lifting Weights Image">
             </div>
 
             <p>
