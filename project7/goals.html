@@ -35,7 +35,7 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            margin: 20px auto; /* Adjust margin as needed */
+            margin: 20px auto; 
         }
 
         textarea {
@@ -63,13 +63,13 @@
         document.addEventListener('DOMContentLoaded', function() {
             const notepadContent = document.getElementById('notepad-content');
 
-            // Load saved content from localStorage
+            
             const savedContent = localStorage.getItem('notepadContent');
             if (savedContent) {
                 notepadContent.value = savedContent;
             }
 
-            // Save content to localStorage on input
+            
             notepadContent.addEventListener('input', function() {
                 const content = notepadContent.value;
                 localStorage.setItem('notepadContent', content);
