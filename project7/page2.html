@@ -11,20 +11,20 @@
             margin: 0;
             padding: 0;
             background: linear-gradient(to bottom, #90a5ad, #000000);
-            color: #ffffff; /* Change text color to white */
+            color: #ffffff;
         }
 
         header {
-             text-align: center;
-             background-color: rgb(255, 255, 255);
-             color: #000000;
-             padding: 10px; /* Adjusted padding */
-             border-radius: 5px;
-             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-             margin: 10px auto; /* Centered and adjusted margin */
-             max-width: 800px; /* Adjusted max-width */
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px auto;
+            max-width: 800px;
         }
-        
+
         nav {
             text-align: center;
             background-color: #000000;
@@ -37,7 +37,7 @@
         nav a {
             color: #ffffff;
             text-decoration: none;
-            margin: 0 20px;
+            margin: 0 10px;
             font-weight: bold;
             transition: color 0.3s ease;
         }
@@ -45,9 +45,9 @@
         nav a:hover {
             color: #0056b3;
         }
-        
+
         #main-content {
-            padding: 10px; /* Adjusted padding */
+            padding: 10px;
             text-align: center;
         }
 
@@ -55,27 +55,29 @@
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            margin: 10px 0; /* Adjusted margin */
+            margin: 10px 0;
         }
 
         h1, h2, p {
-            color: #000000; /* Change text color to white */
+            color: #000000;
         }
 
         .goals-list {
             display: flex;
-            justify-content: space-around;
-            margin: 10px 0; /* Adjusted margin */
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px 0;
         }
 
         .goals-list a {
             text-decoration: none;
             color: #ffffff;
             background-color: #000000;
-            padding: 8px; /* Adjusted padding */
+            padding: 8px;
             border-radius: 12px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            margin: 5px;
         }
 
         .goals-list a:hover {
@@ -84,20 +86,38 @@
 
         .quote {
             font-style: italic;
-            color: #000000; /* Change text color to white */
-            margin-top: 5px; /* Adjusted margin */
+            color: #000000;
+            margin-top: 5px;
         }
+
         @media only screen and (max-width: 600px) {
             header {
-                margin: 20px; /* Adjusted margin for very small screens */
+                margin: 10px;
             }
 
             nav a {
-                margin: 0 5px; /* Adjusted margin for very small screens */
+                margin: 0 5px;
             }
 
-            .images img {
-                margin: 0 2px; /* Adjusted margin for very small screens */
+            h1 {
+                font-size: 24px; /* Adjusted font size for smaller screens */
+            }
+
+            h2 {
+                font-size: 18px; /* Adjusted font size for smaller screens */
+            }
+
+            p {
+                font-size: 14px; /* Adjusted font size for smaller screens */
+            }
+
+            .goals-list a {
+                font-size: 12px; /* Adjusted font size for smaller screens */
+                padding: 5px;
+            }
+
+            .quote {
+                font-size: 12px; /* Adjusted font size for smaller screens */
             }
         }
     </style>
